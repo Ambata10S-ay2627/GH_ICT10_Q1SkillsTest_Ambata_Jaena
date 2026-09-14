@@ -12,7 +12,6 @@ def create_order(e):
     display(subtotal, target="show")
     display(f'Your subtotal {subtotal}', target="show")
 
-    
     vAT = subtotal * 0.12
     display(f'Your vAT {vAT}', target="show")
     
