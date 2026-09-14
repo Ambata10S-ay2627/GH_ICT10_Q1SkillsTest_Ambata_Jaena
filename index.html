@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <title>Receipt Generator</title>
+</head>
+<body>
+    <h1>Tapioca Corner 🧋</h1>
+    <h3> Milktea Menu Items</h3>
+    <form id="menu">
+		<input type="checkbox" id="item1" value="100">
+            <label id="item1-label">Regular</label><br>
+
+		<input type="checkbox" id="item2" value="130">
+            <label id="item2-label">Brown Sugar</label><br>
+
+		<input type="checkbox" id="item3" value="150">
+            <label id="item3-label">Sweet Taro</label><br>
+
+		<input type="checkbox" id="item4" value="190">
+            <label id="item4-label">Cookies & Cream Cheesecake</label><br>
+
+        <button type="button" py-click="create_order">Create Order</button><br>
+
+    </form>
+
+    <br>
+
+        <label>Prices Overview:</label><br>
+        <select id="milktea">
+            <option value="100">Regular - ₱100</option>
+            <option value="129">Brown Sugar - ₱130</option>
+            <option value="150">Sweet Taro - ₱150</option>
+            <option value="190">Cookies & Cream Cheesecake - ₱190</option>
+        </select>
+
+    <br>
+
+    <h3>====Receipt====</h3>
+    <div id="show"></div>
+
+
+    <py-script src="main.py"></py-script>
+    
+</body>
+</html>
