@@ -9,4 +9,10 @@ def create_order(e):
     prod4 = document.getElementById("item4")
 
     subtotal = float(prod1.value) * prod1.checked + float(prod2.value) * prod2.checked + float(prod3.value) * prod3.checked + float(prod4.value) * prod4.checked
-    display(subtotal, target="show") 
+    display(subtotal, target="show")
+    
+    vAT = subtotal * 0.12
+    display(f'This is your vAT {vAT}', target="show")
+    
+    total_amount = subtotal + vAT
+    display(f'This is your total amount {total_amount}', target="show")
